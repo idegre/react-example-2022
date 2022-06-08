@@ -3,6 +3,8 @@ const prod = process.env.NODE_ENV === 'production';
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
 	mode: prod ? 'production' : 'development',
@@ -26,11 +28,15 @@ module.exports = {
 			},
 		]
 	},
+	
 	devtool: prod ? undefined : 'source-map',
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: 'index.html',
 		}),
 		new MiniCssExtractPlugin(),
+		new webpack.ProvidePlugin({
+			trafficMeister: path.resolve(path.join(__dirname, './service')),
+		})
 	],
 };

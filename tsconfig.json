@@ -11,6 +11,17 @@
         "strict": true,
         "sourceMap": true,
         "target": "esnext",
+        "typeRoots": ["./types"],
+        "baseUrl": ".",
+        "types": ["node"],
+        "paths": {
+            "/*": [
+                "./*"
+            ],
+            "~/*": [
+                   "./*"
+            ]
+        }
     },
     "exclude": [
         "node_modules"

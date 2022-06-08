@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { MainScreen } from './screens';
+import { createRoot } from 'react-dom/client';
+import { App } from './App';
 
-ReactDOM.render(
-	<MainScreen />,
-	document.getElementById('app-root'),
-);
+const container = document.getElementById('app-root');
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+createRoot(container!).render(<App />);

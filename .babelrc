@@ -1,3 +1,12 @@
 {
-  "plugins": ["babel-plugin-styled-components"]
+  "plugins": [
+    "babel-plugin-styled-components", 
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathSuffix": "./",
+        "rootPathPrefix": "~/"
+      }
+    ]
+  ]
 }

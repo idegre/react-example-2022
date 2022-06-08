@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import carsReducer from './cars/slices';
+import selectionReducer from './selection/slices';
 
 export const rootReducer = combineReducers({
-	cars: carsReducer
+	cars: carsReducer,
+	selection: selectionReducer
 });
 
 export const store = configureStore({

@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export type SelectionState = {
     fields: {
-        [field: string]: string
+        [field: string]: string | null
     }
 }
 
@@ -15,7 +15,7 @@ export const carsSlice = createSlice({
 	initialState,
 	reducers: {
 		setSelection: (state, {payload: {field, value}}: PayloadAction<{field: string, value: string}>) => {
-			state.fields[field] = value;
+			state.fields[field] = value === 'No Selection' ? null : value;
 		}
 	},
 });

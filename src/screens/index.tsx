@@ -24,5 +24,5 @@ export const MainScreen = () => {
 	return <Container>
 		<Dropdown title="type" options={types}/>
 		<Dropdown title="brand" options={brands}/>
-		<Dropdown title="color" options={colors}/>
+		<Dropdown title="colors" options={colors}/>
 	</Container>;};

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test selectors handles broken image links 1`] = `
+<div
+  className="sc-gsnTZi fnwWxp"
+>
+  <img
+    onError={[Function]}
+    src="fake URL"
+  />
+  <div
+    className="sc-dkzDqf cWPqBb"
+  >
+    <div
+      className="sc-bczRLJ hJhdoW"
+    >
+      brand
+    </div>
+    <div
+      className="sc-bczRLJ hJhdoW"
+    >
+      type2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`test selectors renders correctly 1`] = `
+<div
+  className="sc-gsnTZi fnwWxp"
+>
+  <img
+    onError={[Function]}
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_%281%29%2C_5._April_2012%2C_D%C3%BCsseldorf.jpg/520px-Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_%281%29%2C_5._April_2012%2C_D%C3%BCsseldorf.jpg"
+  />
+  <div
+    className="sc-dkzDqf cWPqBb"
+  >
+    <div
+      className="sc-bczRLJ hJhdoW"
+    >
+      brand1
+    </div>
+    <div
+      className="sc-bczRLJ hJhdoW"
+    >
+      type1
+    </div>
+  </div>
+</div>
+`;

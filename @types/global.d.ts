@@ -1,7 +1,7 @@
 declare namespace trafficMeister {
 export type Car = {
                 id: number;
-                type: 'car';
+                type: string;
                 brand: string;
                 colors: string[];
                 img: string;

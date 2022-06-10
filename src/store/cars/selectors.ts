@@ -26,5 +26,5 @@ export const getFieldOptionsSelector = (selectorField: Fields) => createSelector
 				[...c[selectorField]].forEach(i => mappedArr[i] = ''); 
 			else mappedArr[<string>c[selectorField]] = '';
 			return Object.keys(mappedArr);
-		}, []) : []; // make a new options array that doesnt have repetitions
+		}, []) : [];
 });

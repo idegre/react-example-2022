@@ -13,7 +13,7 @@
         "target": "esnext",
         "typeRoots": ["./types"],
         "baseUrl": ".",
-        "types": ["node"],
+        "types": ["node", "jest"],
         "paths": {
             "/*": [
                 "./*"
